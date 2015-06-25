@@ -22,6 +22,8 @@ or for some dev action:
 
     node server.js --development
 
+## Screenshots!
+![Screenshot](/images/screenshot.jpg?raw=true "Screenshot")
 
 ## Built with
 - [ExpressJS](http://expressjs.com/) server engine
