@@ -1,10 +1,10 @@
-PoolMonit
+PiPoolMonit
 ==========
 Monitor your pool's temperature using a RPI!
 
 ## Installation
 ```
-git clone git@github.com:shanesteszyn/poolmonit.git
+git clone git@github.com:ShaneSteszyn/PiPoolMonit.git
 cd poolmonit
 npm install
 bower install
