@@ -1,8 +1,8 @@
-pooltemp = '15'
-syst1temp = '15'
-syst2temp = '15'
-syst3temp = '15'
-ambianttemp = '15'
+pooltemp = '12'
+syst1temp = '16'
+syst2temp = '18'
+syst3temp = '20'
+ambianttemp = '10'
 
 systemstats = '{"pool": ' + str(pooltemp) + ', "ambient": ' + str(ambianttemp) + \
                   ',"sol1": ' + str(syst1temp) + \
