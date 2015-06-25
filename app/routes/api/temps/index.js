@@ -14,7 +14,7 @@ var Temp = require('../../../models/Temp');
 // Path is relative to Python install for some reason, so we use absolute path
 // scriptPath: '/Users/shanesteszyn/Projects/Olivier/Pool/scripts/'
 var pythonShellOptions = {
-  scriptPath: '/Users/shanesteszyn/Projects/Olivier/Pool/scripts/'
+  scriptPath: '/home/pi/Projects/PiPoolMonit/scripts'
 };
 
 /*===============================
