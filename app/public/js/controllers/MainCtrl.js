@@ -5,7 +5,7 @@ app.controller('MainCtrl', ['$scope', '$timeout', '$mdDialog', '$mdSidenav', '$h
       datasets: [
         {
           label: "Pool",
-          fillColor: "rgba(213,87,59,0.2)",
+          fillColor: "rgba(213,87,59,0.1)",
           strokeColor: "rgba(213,87,59,1)",
           pointColor: "rgba(213,87,59,1)",
           pointStrokeColor: "#fff",
@@ -15,7 +15,7 @@ app.controller('MainCtrl', ['$scope', '$timeout', '$mdDialog', '$mdSidenav', '$h
         },
         {
           label: "Solar Panel 1",
-          fillColor: "rgba(119,125,167,0.2)",
+          fillColor: "rgba(119,125,167,0.1)",
           strokeColor: "rgba(119,125,167,1)",
           pointColor: "rgba(119,125,167,1)",
           pointStrokeColor: "#fff",
@@ -25,7 +25,7 @@ app.controller('MainCtrl', ['$scope', '$timeout', '$mdDialog', '$mdSidenav', '$h
         },
         {
           label: "Solar Panel 2",
-          fillColor: "rgba(148,201,169,0.2)",
+          fillColor: "rgba(148,201,169,0.1)",
           strokeColor: "rgba(148,201,169,1)",
           pointColor: "rgba(148,201,169,1)",
           pointStrokeColor: "#fff",
@@ -35,7 +35,7 @@ app.controller('MainCtrl', ['$scope', '$timeout', '$mdDialog', '$mdSidenav', '$h
         },
         {
           label: "Solar Panel 2",
-          fillColor: "rgba(198,236,174,0.2)",
+          fillColor: "rgba(198,236,174,0.1)",
           strokeColor: "rgba(198,236,174,1)",
           pointColor: "rgba(198,236,174,1)",
           pointStrokeColor: "#fff",
@@ -45,7 +45,7 @@ app.controller('MainCtrl', ['$scope', '$timeout', '$mdDialog', '$mdSidenav', '$h
         },
         {
           label: "Ambient",
-          fillColor: "rgba(136,80,83,0.2)",
+          fillColor: "rgba(136,80,83,0.1)",
           strokeColor: "rgba(136,80,83,1)",
           pointColor: "rgba(136,80,83,1)",
           pointStrokeColor: "#fff",

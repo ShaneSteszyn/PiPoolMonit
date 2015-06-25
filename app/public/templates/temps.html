@@ -3,14 +3,14 @@
     </div>
     <md-card ng-repeat="temp in temps">
       <md-card-content>
-        <h2>Piscine: {{temp.pool}}</h2>
-        <h3>Soleil 1: {{temp.sol1}}</h3>
-        <h3>Soleil 2: {{temp.sol2}}</h3>
-        <h3>Soleil 3: {{temp.sol3}}</h3>
-        <h3>Ambient: {{temp.ambient}}</h3>
-        <p>
-          {{temp.date}}
-        </p>
+        <h3>{{temp.date}}</h3>
+        <ul>
+          <li>Piscine: {{temp.pool}}</li>
+          <li>Soleil 1: {{temp.sol1}}</li>
+          <li>Soleil 2: {{temp.sol2}}</li>
+          <li>Soleil 3: {{temp.sol3}}</li>
+          <li>Ambient: {{temp.ambient}}</li>
+        </ul>
       </md-card-content>
     </md-card>
 <script src="/vendor/Chart.js/Chart.min.js"></script>    
