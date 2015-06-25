@@ -9,8 +9,8 @@ var bodyParser = require('body-parser');
 var Account = require('../../models/Temp.js');
 
 // Connect to mongo db
-// mongo.connect('http://dev.steszyn.ca/poolmonit');
-mongo.connect('localhost/poolmonit');
+mongo.connect('http://dev.steszyn.ca/poolmonit');
+// mongo.connect('localhost/poolmonit');
 
 var tempAPI = require('./temps');
 
