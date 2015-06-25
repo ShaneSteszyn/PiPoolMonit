@@ -97,7 +97,7 @@ app.controller('MainCtrl', ['$scope', '$timeout', '$mdDialog', '$mdSidenav', '$h
       );
 
       // Set the chart values
-      for (var i = result.temps.length-1; i > 0; i--){
+      for (var i = result.temps.length-1; i >= 0; i--){
         //Show date in hourly format
         data.labels.push(result.temps[i].date);
 
