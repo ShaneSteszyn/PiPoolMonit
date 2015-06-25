@@ -10,8 +10,6 @@ var bodyParser = require('body-parser');
 
 var Temp = require('../../../models/Temp');
 
-mongo.connect('mongodb://dev.steszyn.ca/poolmonit');
-// mongo.connect('localhost/poolmonit');
 
 // Path is relative to Python install for some reason, so we use absolute path
 var pythonShellOptions = {
