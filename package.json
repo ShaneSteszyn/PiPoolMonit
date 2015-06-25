@@ -1,0 +1,30 @@
+{
+  "name": "PoolMonit",
+  "version": "1.0.0",
+  "description": "Monitor the pool's temp!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "config": "node config.js"
+  },
+  "author": "Shane Steszyn, Olivier Royer-Tardif",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.12.4",
+    "express": "^4.12.4",
+    "mongoose": "^4.0.3",
+    "python-shell": "^0.1.0",
+    "rpi-gpio": "^0.5.2"
+  },
+  "devDependencies": {
+    "del": "^1.1.1",
+    "gulp": "~3.8.11",
+    "gulp-atom-shell": "^0.2.0",
+    "gulp-autoprefixer": "^2.3.0",
+    "gulp-bower": "0.0.10",
+    "gulp-flatten": "0.0.4",
+    "gulp-livereload": "^3.7.0",
+    "gulp-nodemon": "^2.0.3"
+  }
+}

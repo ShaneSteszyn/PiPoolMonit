@@ -1,0 +1,16 @@
+    <div id="chart-container">
+      <canvas id="chart" width="200" height="100"></canvas>
+    </div>
+    <md-card ng-repeat="temp in temps">
+      <md-card-content>
+        <h2>Piscine: {{temp.pool}}</h2>
+        <h3>Soleil 1: {{temp.sol1}}</h3>
+        <h3>Soleil 2: {{temp.sol2}}</h3>
+        <h3>Soleil 3: {{temp.sol3}}</h3>
+        <h3>Ambient: {{temp.ambient}}</h3>
+        <p>
+          {{temp.date}}
+        </p>
+      </md-card-content>
+    </md-card>
+<script src="/vendor/Chart.js/Chart.min.js"></script>    
