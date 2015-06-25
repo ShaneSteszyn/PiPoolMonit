@@ -13,6 +13,7 @@ var Temp = require('../../../models/Temp');
 
 // Path is relative to Python install for some reason, so we use absolute path
 // scriptPath: '/Users/shanesteszyn/Projects/Olivier/Pool/scripts/'
+// scriptPath: '/home/pi/Projects/PiPoolMonit/scripts'
 var pythonShellOptions = {
   scriptPath: '/home/pi/Projects/PiPoolMonit/scripts'
 };
@@ -53,7 +54,7 @@ router.route('/update')
     var builder = {};
     builder.status = "failed";
 
-    var pyShell = new pythonShell('test.py', pythonShellOptions);
+    var pyShell = new pythonShell('getTemps.py', pythonShellOptions);
 
     pyShell.on('message', function(message){
       var newTemp = JSON.parse(message);

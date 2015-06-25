@@ -51,4 +51,4 @@ server.listen(CONFIG.port, function(){
 });
 
 /*==========  Run the update script once, then every hour   ==========*/
-setTimeout(scripts.update(), 1000 * 60 * 60);
+setInterval(scripts.update(), 1000 * 60 * 60);

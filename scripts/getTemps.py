@@ -66,10 +66,10 @@ try:
     syst3temp = read_temp(syst3sensor)
     ambianttemp = read_temp(ambiantsensor)
 
-    systemstats = "{pool: " + str(pooltemp) + ", ambient: " + str(ambianttemp) + \
-                  ",sol1: " + str(syst1temp) + \
-                  ",sol2: " + str(syst2temp) + \
-                  ",sol3: " + str(syst3temp) + "}"
+    systemstats = '{"pool": ' + str(pooltemp) + ', "ambient": ' + str(ambianttemp) + \
+                  ',"sol1": ' + str(syst1temp) + \
+                  ',"sol2": ' + str(syst2temp) + \
+                  ',"sol3": ' + str(syst3temp) + '}'
     print systemstats # send this to node.js (python-shell)
 
 except KeyboardInterrupt:        GPIO.cleanup()
