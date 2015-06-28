@@ -80,6 +80,7 @@ router.route('/update')
     pyShell.end(function(err){
       if (err) {
         builder.message = err;
+        console.log(err);
         res.json(builder);
         throw err;
       }
