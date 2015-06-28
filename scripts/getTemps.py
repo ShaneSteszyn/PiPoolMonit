@@ -6,6 +6,7 @@ import glob
 import time
 import RPi.GPIO as GPIO
 
+GPIO.setwarnings(False);
 GPIO.setmode(GPIO.BCM)
 
 #Relay 1 connected to pin 2
