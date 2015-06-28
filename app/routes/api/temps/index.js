@@ -57,29 +57,32 @@ router.route('/update')
     var pyShell = new pythonShell('getTemps.py', pythonShellOptions);
 
     pyShell.on('message', function(message){
-      var newTemp = JSON.parse(message);
+
+      if (message.substr(0, 4 === 'JSON')){
+        var newTemp = JSON.parse(message.split('+')[1]);
       
+        newTemp.date = Date();
+        var temp = new Temp(newTemp);
 
-      newTemp.date = Date();
-      var temp = new Temp(newTemp);
-
-      // Save this temp to mongo
-      temp.save(function (err) {
-        if (err){
-          builder.message = err;
+        // Save this temp to mongo
+        temp.save(function (err) {
+          if (err){
+            builder.message = err;
+            res.json(builder);
+            throw err;
+          }
+          builder.temp = temp;
+          builder.status = 'success';
           res.json(builder);
-          throw err;
-        }
-        builder.temp = temp;
-        builder.status = 'success';
-        res.json(builder);
-      });
+        });
+      }
     });
 
     // When the script ends, save the date recieved
     pyShell.end(function(err){
       if (err) {
         builder.message = err;
+        console.log('script has ended');
         console.log(err);
         res.json(builder);
         throw err;
